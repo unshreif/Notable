@@ -1,0 +1,9 @@
+.author-link {
+  color: #6c757d; 
+  text-decoration: none; 
+}
+
+.author-link:hover {
+  color: #6c757d; 
+  text-decoration: underline;
+}

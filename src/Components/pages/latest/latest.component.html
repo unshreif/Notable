@@ -1,0 +1,37 @@
+<div class="container py-5">
+  <h4 class="mb-5">LATEST POSTS</h4>
+  <div class="row g-4">
+    <div class="col-12 col-sm-6 col-lg-4" *ngFor="let post of posts">
+      <a href="/sidepage">
+      <img [src]="post.img" class="img-fluid mb-2" />
+      </a>
+      <p class="text-uppercase text-secondary small fw-bold mb-1">{{ post.category }}</p>
+      <h6 class="fw-semibold">{{ post.title }}</h6>
+      <p class="text-muted small">By 
+          <a *ngIf="post.author === 'Reta Torphy'" href="/reta-trofy" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Peterson'" href="/simeon-peterson" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Brekke'" href="/simeon-brekke" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Annie Lueilwitz'" href="/annie-lueilwitz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Leo Bartell'" href="/leo-bartell" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Clem Onojeghuo'" href="/clem-onojeghuo" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Michal Legros'" href="/michal-legros" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Rosanna Ondricka'" href="/rosanna-ondricka" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Alessandra Ortiz'" href="/alessandra-ortiz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Coby Gottlieb'" href="/coby-gottlieb" class="author-link">{{ post.author }}</a>
+
+          <span *ngIf="post.author !== 'Reta Torphy' 
+              && post.author !== 'Simeon Peterson' 
+              && post.author !== 'Simeon Brekke'
+              && post.author !== 'Annie Lueilwitz'
+              && post.author !== 'Leo Bartell'
+              && post.author !== 'Clem Onojeghuo'
+              && post.author !== 'Michal Legros'
+              && post.author !== 'Rosanna Ondricka'
+              && post.author !== 'Alessandra Ortiz'
+              && post.author !== 'Coby Gottlieb'">
+              {{ post.author }}
+           </span>
+        </p>
+    </div>
+  </div>
+</div>

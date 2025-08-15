@@ -1,0 +1,94 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="font-family: 'Arial', Helvetica, Helvetica neue, sans-serif;">
+  <div class="container">
+    <a class="navbar-brand fw-bold ps-5" routerLink="/" style="font-family: inherit; font-weight: bolder;">NOICELAND</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="font-family: inherit;">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav" style="font-family: inherit;">
+      <ul class="navbar-nav ms-auto pe-5" style="font-family: inherit;">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active" style="font-family: inherit;">HomeComponent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/latest" routerLinkActive="active" style="font-family: inherit;">LatestComponent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active" style="font-family: inherit;">AboutComponent</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
+
+<footer class="main-footer text-light" style="background-color: #141414;">
+  <div class="container py-5">
+<div class="footer-top d-flex flex-column flex-md-row justify-content-between align-items-start mb-9" style="width: 100%;">
+  <div class="footer-brand mb-4 mb-md-0 d-flex align-items-center" style="width: 100vw;">
+    <h3 class="footer-logo mb-0">NOICELAND</h3>
+    <h6 class="footer-copy d-inline ms-2 mb-0">© 2025 NOICELAND™, ALL RIGHTS RESERVED</h6>
+  </div>
+</div>
+<br>
+    <br>
+    <br>
+    <hr class="footer-divider">
+
+
+
+<div class="row mb-5 align-items-start">
+  <div class="col-8">
+    <h6 class="footer-heading">CATEGORIES</h6>
+    <ul class="footer-list d-flex flex-wrap justify-content-start">
+      <li class="category-item"><a>Animation</a></li>
+      <li class="category-item"><a>Architecture</a></li>
+      <li class="category-item"><a>Graphic Design</a></li>
+      <li class="category-item"><a>Illustration</a></li>
+      <li class="category-item"><a>Interactive Design</a></li>
+      <li class="category-item"><a>Miscellaneous</a></li>
+      <li class="category-item"><a>Photography</a></li>
+      <li class="category-item"><a>Product Design</a></li>
+    </ul>
+  </div>
+  <div class="col-4">
+    <h6 class="footer-heading">SUBSCRIBE TO NEWSLETTER</h6>
+    <form class="d-flex subscribe-form">
+      <input type="email" class="form-control rounded-0" placeholder="Email address" required>
+      <button class="btn btn-dark rounded-0 ms-2 fw-bold px-4" type="submit">SEND</button>
+    </form>
+  </div>
+</div>
+    <div class="row gy-4 mt-4">
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h6 class="footer-heading">INFORMATION</h6>
+        <ul class="footer-list">
+          <li><a routerLink="/about" routerLinkActive="active">about</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">terms</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h6 class="footer-heading">FOLLOW US</h6>
+        <ul class="footer-list">
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">facebook</a></li>
+          <li><a href="#">twitter</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h6 class="footer-heading">TEMPLATE</h6>
+        <ul class="footer-list">
+          <li><a href="#">Image License Info</a></li>
+          <li><a href="webflow.com">Powered by Webflow</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</footer>

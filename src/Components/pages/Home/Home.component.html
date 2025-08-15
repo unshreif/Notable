@@ -1,0 +1,144 @@
+<div class="content-wrapper">
+
+  <div class="custom-container py-5 animate__animated animate__fadeIn" style="animation-duration: 1s;">
+    <div class="row g-8 align-items-start">
+      <div class="col-md-6">
+        <a href="#">
+          <img src="assets/images/img1.jpg" class="img-fluid" alt="Mountains" style="cursor:pointer;" />
+        </a>
+      </div>
+      <div class="col-md-4">
+        <span class="text-uppercase text-secondary small fw-bold">Illustration</span>
+        <h1 class="h2  mt-2 fw-semibold" style="font-family: tenor-sans;">Japan House opens in mountainside to foster peak creativity.</h1>
+        <p class="text-muted mt-3">
+          Enim omittam qui id, ex quo atqui dictas complectitur. Nec ad timeam accusata,
+          hinc justo falli id eum, ferri novum molestie eos cu.
+        </p>
+        <p class="fw-semibold mt-2 mb-0">
+          <a href="#" class="text-body text-decoration-none">BY RETA TORPHY</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-container py-5">
+    <div class="row g-4">
+      <div class="col-md-4" *ngFor="let post of posts.slice(0,6)">
+        <a href="/sidepage">
+        <img [src]="post.img" class="img-fluid mb-2" />
+        </a>
+        <p class="text-uppercase text-secondary small fw-bold mb-1">{{ post.category }}</p>
+        <h5 class="fw-semibold" style="font-family: tenor-sans;">{{ post.title }}</h5>
+        <p class="text-muted small">By
+          <a *ngIf="post.author === 'Reta Torphy'" href="/reta-trofy" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Peterson'" href="/simeon-peterson" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Brekke'" href="/simeon-brekke" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Annie Lueilwitz'" href="/annie-lueilwitz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Leo Bartell'" href="/leo-bartell" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Clem Onojeghuo'" href="/clem-onojeghuo" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Michal Legros'" href="/michal-legros" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Rosanna Ondricka'" href="/rosanna-ondricka" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Alessandra Ortiz'" href="/alessandra-ortiz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Coby Gottlieb'" href="/coby-gottlieb" class="author-link">{{ post.author }}</a>
+
+          <span *ngIf="post.author !== 'Reta Torphy'
+              && post.author !== 'Simeon Peterson'
+              && post.author !== 'Simeon Brekke'
+              && post.author !== 'Annie Lueilwitz'
+              && post.author !== 'Leo Bartell'
+              && post.author !== 'Clem Onojeghuo'
+              && post.author !== 'Michal Legros'
+              && post.author !== 'Rosanna Ondricka'
+              && post.author !== 'Alessandra Ortiz'
+              && post.author !== 'Coby Gottlieb'">
+              {{ post.author }}
+           </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="custom-container py-5 border-top">
+    <h6 class="text-uppercase text-muted fw-bold mb-4">LATEST POSTS</h6>
+    <div class="row g-4">
+      <div class="col-md-3" *ngFor="let post of posts.slice(6, 14)">
+        <a href="#">
+        <img [src]="post.img" class="img-fluid mb-2" />
+        </a>
+        <p class="text-uppercase text-secondary small fw-bold mb-1">{{ post.category }}</p>
+        <h6 class="fw-semibold">{{ post.title }}</h6>
+        <p class="text-muted small">By
+          <a *ngIf="post.author === 'Reta Torphy'" href="/reta-trofy" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Peterson'" href="/simeon-peterson" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Brekke'" href="/simeon-brekke" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Annie Lueilwitz'" href="/annie-lueilwitz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Leo Bartell'" href="/leo-bartell" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Clem Onojeghuo'" href="/clem-onojeghuo" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Michal Legros'" href="/michal-legros" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Rosanna Ondricka'" href="/rosanna-ondricka" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Alessandra Ortiz'" href="/alessandra-ortiz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Coby Gottlieb'" href="/coby-gottlieb" class="author-link">{{ post.author }}</a>
+
+          <span *ngIf="post.author !== 'Reta Torphy'
+              && post.author !== 'Simeon Peterson'
+              && post.author !== 'Simeon Brekke'
+              && post.author !== 'Annie Lueilwitz'
+              && post.author !== 'Leo Bartell'
+              && post.author !== 'Clem Onojeghuo'
+              && post.author !== 'Michal Legros'
+              && post.author !== 'Rosanna Ondricka'
+              && post.author !== 'Alessandra Ortiz'
+              && post.author !== 'Coby Gottlieb'">
+              {{ post.author }}
+           </span>
+        </p>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a
+      href="/latest"
+      class="btn btn-outline-dark px-4 py-2 text-uppercase fw-semibold small">
+      View all latest posts</a>
+    </div>
+
+  </div>
+
+  <div class="custom-container py-5">
+    <h6 class="text-uppercase text-muted fw-bold mb-4">Featured Posts</h6>
+    <div class="row g-5">
+      <div class="col-md-6" *ngFor="let post of posts.slice(14, 18); let i = index">
+        <a href="/sidepage">
+        <img [src]="post.img" class="img-fluid mb-3" />
+        </a>
+        <p class="text-uppercase text-secondary small fw-bold mb-1">{{ post.category }}</p>
+        <h5 class="fw-semibold" style="font-family: tenor-sans;">{{ post.title }}</h5>
+        <p class="text-muted small">By
+          <a *ngIf="post.author === 'Reta Torphy'" href="/reta-trofy" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Peterson'" href="/simeon-peterson" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Simeon Brekke'" href="/simeon-brekke" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Annie Lueilwitz'" href="/annie-lueilwitz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Leo Bartell'" href="/leo-bartell" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Clem Onojeghuo'" href="/clem-onojeghuo" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Michal Legros'" href="/michal-legros" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Rosanna Ondricka'" href="/rosanna-ondricka" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Alessandra Ortiz'" href="/alessandra-ortiz" class="author-link">{{ post.author }}</a>
+          <a *ngIf="post.author === 'Coby Gottlieb'" href="/coby-gottlieb" class="author-link">{{ post.author }}</a>
+
+          <span *ngIf="post.author !== 'Reta Torphy'
+              && post.author !== 'Simeon Peterson'
+              && post.author !== 'Simeon Brekke'
+              && post.author !== 'Annie Lueilwitz'
+              && post.author !== 'Leo Bartell'
+              && post.author !== 'Clem Onojeghuo'
+              && post.author !== 'Michal Legros'
+              && post.author !== 'Rosanna Ondricka'
+              && post.author !== 'Alessandra Ortiz'
+              && post.author !== 'Coby Gottlieb'">
+              {{ post.author }}
+           </span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,32 @@
+.custom-container {
+  width: 70vw;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 992px) {
+  .custom-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+  }
+}
+
+.author-link {
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.author-link:hover {
+  color: #6c757d;
+  text-decoration: underline;
+}
